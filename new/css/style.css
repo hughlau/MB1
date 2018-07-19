@@ -1,50 +1,10 @@
 /* FULLWIDTH OF BOXED VERSIONS SETTINGS*/
  .c_container {
     margin: 0 auto;
-    width:1170px;
+    width:92%;
     position: relative;
     
 }
-
-/*-------------------------------------------------------------------------------------------*/
-/*                                 TABLE OF CONTENT                                         */
-/*-----------------------------------------------------------------------------------------*/
-/*
-1 - RESET CSS
-2 - GENERAL CSS FOR STYLING (BODY,LINKS, LISTS,HEADINGS,TABLES,CODE, WRAPPER, CONTAINER)
-3 - GRID 
-4 - HEADER CSS STYLE (NAVIGATION & TOP LINKS)
-5 - SLIDERS (LAYERSLIDER, REVOLUTION SLIDER, FLEX SLIDER)
-6 - FOOTER & COPYRIGHTS
-7 - FORMS
-8 - PORTFOLIO & BLOG
-9 - PRICING TABLES & BOXES
-10 - SHOP LAYOUT
-11 - COMMENT AREA
-12 - JQUERY TABS
-13 - JQUERY ACCORDION
-14 - CAROUSEL
-15 - SIDEBAR
-16 - TABLES
-17 - SOCIAL WIDGETS (FLICKR,INSTAGRAM & TWITTER)
-18 - NOTIFICATIONS BOXES
-19 - TOOLTIP
-20 - BUTTONS
-21 - SKILLS BAR
-22 - TEAM MEMBER
-23 - FEATURED ICONS BLOCKS
-24 - TESTIMONIALS, SERVICES % NOTICE ICONS BLOCKS
-25 - DROPCAPS, HOME INTRO,SIMPLE LIST, TEAM MEMBER CHART & GOOGLE MAPS 
-*/
- /*--------------------------------------------------------------------------------------*/
- /*                     1 - RESET CSS                                                    */
- /*-------------------------------------------------------------------------------------*/
-
- /*--------------------------------------------------------------------------------------*/
- /*                     2 - GENERAL CSS FOR STYLING                                      */
- /*-------------------------------------------------------------------------------------*/
-
-
 
 
 #content{
@@ -1170,7 +1130,7 @@ ul#portfolio-container li   ol.flex-control-nav li a {
 .blog-item.medium img,
 .blog-item.medium:hover img,
 .blog-item.large img,
-.blog-item.large:hover img { border-radius: 4px 4px 4px 4px!important }
+.blog-item.large:hover img { border-radius: 4px 4px 4px 4px!important; height:200px; }
 .blog-item { border-radius: 4px }
 .portfolio-item a.item-permalink,
 .blog-item a.item-permalink {
@@ -1260,8 +1220,7 @@ ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover  a.ite
 .blog-post {
     float: left;
     width: 100%;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border-bottom: 1px solid #e1e1e1;
 }
 .permalink h4 { margin-bottom: 0px }
@@ -1932,6 +1891,7 @@ ul.slidecontrols li a.carousel-disabled:hover {
     margin-top: 20px;
 }
 .sidebar h4.widget-title {
+	text-align:center;
     color: #656d78;
     font-family: 'Roboto', Arial;
     font-size: 16px;

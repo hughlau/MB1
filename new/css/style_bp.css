@@ -2,8 +2,10 @@
 body
 	{
 		background: #fff;
-		font-family: 'lane_-_narrowregular', sans-serif;
-    line-height: 30px;
+		font-size:15px;
+/* 		font-family: 'lane_-_narrowregular', sans-serif;
+font-family:'Microsoft YaHei';*/
+    line-height: 30px; 
 	}
 
 @font-face {
@@ -56,9 +58,9 @@ img:hover {
     font-weight: bold;
     font-size: 30px;
     line-height: 50px;
-    height: 90px;
+     height: 70px;
     margin: 0;
-    padding: 20px 20px 40px 20px;
+    /* padding: 20px 20px 40px 20px; */
 	transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -69,12 +71,12 @@ img:hover {
 }
 .navbar-default .navbar-nav li a {
     border-right: 1px solid #f9f9f9;
-    color: #202020;
+    color: #2244a5;
      font-weight: bold;
     padding-right: 40px;
     padding-left: 40px;
-    line-height: 60px;
-	
+    line-height: 40px;
+	font-size:1.8rem;
 	transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -106,7 +108,7 @@ img:hover {
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /* home section */
 #content {
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 

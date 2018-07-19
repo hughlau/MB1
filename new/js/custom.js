@@ -1,29 +1,21 @@
-/*----------------------------------------------------------*/
-/*                   TABLE OF CONTENT                        */
-/*----------------------------------------------------------*/
-/*
-1 - CLIENTS IMG HOVER EFFECT
-2 - SHOP JQUERY UI SLIDER
-3 - REVOLUTION SLIDER
-4 - TEAM MEMBER CHART JQUERY
-5 - NOTIFICATIONS BLOCK JQUERY
-6 - STICKY NAVIGATION
-7 - TWITTER PLUGIN JQUERY
-8 - PORTFOLIO ISOTOPE JQUERY
-9 - RESPONSIVE NAVIGATION
-10 - MAIN NAVIGATION JS
-11 - LAYERSLIDER JS
-12 - FLICKR PHOTOS
-13 - INSTAGRAM PHOTOS
-14 - SKILLS BAR ANIMATION
-15 - FLEX SLIDERS 
-16 - PRETTYPHOTO
-17 - GOOGLE MAPS
-18 - JQUERY ACCORDION
-19 - JQUERY TABS
-20 - JQUERY CAROUSEL
-21 - CONTACT FORM VALIDATION
-*/
+jQuery(document).ready(function($){
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('.go-top').fadeIn(200);
+					} else {
+						$('.go-top').fadeOut(200);
+					}
+				});		
+				// Animate the scroll to top
+				$('.go-top').click(function(event) {
+					event.preventDefault();
+				
+					$('html, body').animate({scrollTop: 0}, 300);
+				});
+	
+
+});
+
 jQuery.noConflict()(function ($) {
 $(document).ready(function ($) {
  /*----------------------------------------------------------*/
@@ -476,3 +468,4 @@ $(document).ready(function ($) {
         }
     });
 });
+
