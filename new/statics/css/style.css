@@ -1,7 +1,7 @@
 /* FULLWIDTH OF BOXED VERSIONS SETTINGS*/
  .c_container {
     margin: 0 auto;
-    width:92%;
+    width:88%;
     position: relative;
     
 }
@@ -1085,7 +1085,7 @@ ul#portfolio-container li   ol.flex-control-nav li a {
 .blog-item {
     float: left;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -1130,7 +1130,7 @@ ul#portfolio-container li   ol.flex-control-nav li a {
 .blog-item.medium img,
 .blog-item.medium:hover img,
 .blog-item.large img,
-.blog-item.large:hover img { border-radius: 4px 4px 4px 4px!important; height:200px; }
+.blog-item.large:hover img { border-radius: 4px 4px 4px 4px!important; height:160px; }
 .blog-item { border-radius: 4px }
 .portfolio-item a.item-permalink,
 .blog-item a.item-permalink {
@@ -1245,12 +1245,12 @@ ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover  a.ite
 .blog-post.layout-2 .media-holder {
     float: left;
     width: 200px;
-    margin-bottom: 0px;
-    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-right: 30px;
     position: relative;
 }
 .blog-post.layout-2 .post-intro {
-    width: 68.5%;
+    width: 75%;
     float: left;
 }
 .blog-post.layout-3 {
@@ -1270,6 +1270,7 @@ ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover  a.ite
 .blog-post.layout-2 ul.post-meta {
     width: auto;
     display: block;
+	margin-bottom:-10px;
 }
 ul.post-meta {
     overflow: hidden;
@@ -1892,11 +1893,10 @@ ul.slidecontrols li a.carousel-disabled:hover {
 }
 .sidebar h4.widget-title {
 	text-align:center;
-    color: #656d78;
     font-family: 'Roboto', Arial;
     font-size: 16px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: bold;
 }
 .sidebar h4.widget-title  i {
     color: #aab2bd;
@@ -1939,9 +1939,51 @@ ul.sidebar-nav li {
     width: 100%;
     float: left;
     list-style: none;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 30px;
     border-bottom: 1px solid #efefef;
 }
+ul.sidebar-nav li.no1{
+	background:url(../images/1.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no2{
+	background:url(../images/2.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no3{
+	background:url(../images/3.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no4{
+	background:url(../images/4.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no5{
+	background:url(../images/5.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no6{
+	background:url(../images/6.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no7{
+	background:url(../images/7.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no8{
+	background:url(../images/8.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no9{
+	background:url(../images/9.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+ul.sidebar-nav li.no10{
+	background:url(../images/10.gif) no-repeat 4px center;
+	background-size:20px 20px;
+}
+
+
 ul.sidebar-nav li a {
     color: #a5a5a5;
     -webkit-transition: all 100ms ease-in-out;

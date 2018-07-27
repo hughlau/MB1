@@ -2,8 +2,8 @@
 body
 	{
 		background: #fff;
-		font-size:15px;
-/* 		font-family: 'lane_-_narrowregular', sans-serif;
+/*		font-size:15px;
+ 		font-family: 'lane_-_narrowregular', sans-serif;
 font-family:'Microsoft YaHei';*/
     line-height: 30px; 
 	}
@@ -69,11 +69,34 @@ img:hover {
 .navbar-brand:hover, .navbar-brand:clicked {
   background: dc5034;
 }
+
 .navbar-default .navbar-nav li a {
     border-right: 1px solid #f9f9f9;
-    color: #2244a5;
+    color: #5b84f7;
      font-weight: bold;
-    padding-right: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 40px;
+	font-size:1.8rem;
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+  }
+    .navbar-default .navbar-nav li a>span{
+    color:#9ea7d6;
+	margin-right:10px;
+  }
+  
+  .navbar-default .navbar-nav li.currentli {
+	background-color: #dc5034;
+  }
+  
+  .navbar-default .navbar-nav li.currentli a {
+    border-right: 1px solid #f9f9f9;
+    color: white;
+     font-weight: bold;
+    padding-right: 30px;
     padding-left: 40px;
     line-height: 40px;
 	font-size:1.8rem;
@@ -82,6 +105,11 @@ img:hover {
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
   }
+    .navbar-default .navbar-nav li.currentli a>span{
+    color:white;
+	margin-right:10px;
+  }
+
 .navbar-default .navbar-nav > li > a:clicked,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -453,4 +481,36 @@ footer span {
   #team h4 {
     padding-bottom: 30px;
   }
+}
+
+/*** page
+-------------------------------------------------------------- ****/
+.pageBox {text-align: center;}
+.pageBox a {border:1px solid #ddd;display:inline-block;margin-right:6px;color: #707070;width:34px;height:34px;font:bold 14px/34px arial;}
+.pageBox a:hover,.pageBox a:active{background:#3aa9f2;color: #FFFFFF;text-decoration: none;}
+.pageBox .cur { background: #3aa9f2;border: 1px solid #3aa9f2;text-decoration: none;}
+.pageBox a.cur {color: #fff;}
+.pageBox .disabled {width: 26px;}
+
+/*** hideNav
+-------------------------------------------------------------- ****/
+.fixed-nav{
+position: fixed;
+width:100%;
+top:-70px; 
+-webkit-transition: top .5s;
+ -moz-transition: top .5s;
+ -o-transition: top .5s;
+ transition: top .5s;
+}
+.fixed-nav-appear{top:0;}
+.fix_sec{
+position: fixed;
+width:100%;
+top:0;
+z-index: 999;
+-webkit-transition: top .5s;
+-moz-transition: top .5s;
+-o-transition: top .5s;
+transition: top .5s;
 }
