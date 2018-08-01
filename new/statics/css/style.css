@@ -1089,6 +1089,7 @@ ul#portfolio-container li   ol.flex-control-nav li a {
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
+
 .portfolio-item a,
 .blog-item a {
     -webkit-transition: all 0.25s ease-out;
@@ -1111,36 +1112,10 @@ ul#portfolio-container li   ol.flex-control-nav li a {
     float: left;
 }
 .blog-item img { border-radius: 4px }
-.portfolio-item:hover img,
-.blog-item.small:hover img,
-.blog-item.medium:hover img,
-.blog-item.large:hover img {
-    position: relative;
-    z-index: 10;
-    opacity: 0.10;
-    -webkit-transform: scale(1.18);
-    -moz-transform: scale(1.18);
-    -ms-transform: scale(1.18);
-    -o-transform: scale(1.18);
-    -webkit-perspective: 1000;
-    border-radius: 4px 4px 0 0;
-}
-.blog-item.small img,
-.blog-item.small:hover img,
-.blog-item.medium img,
-.blog-item.medium:hover img,
-.blog-item.large img,
-.blog-item.large:hover img { border-radius: 4px 4px 4px 4px!important; height:160px; }
-.blog-item { border-radius: 4px }
-.portfolio-item a.item-permalink,
-.blog-item a.item-permalink {
-    background: rgba(0,0,0,0.75);
-    position: absolute;
-    top: 40%;
-    left: -50px;
-    z-index: 120;
-    border-radius: 4px;
-    padding: 8px 12px 8px 12px;
+
+.blog-item.small img{
+	height:auto;
+	width:158px;
 }
 .portfolio-item a.item-preview,
 .blog-item a.item-preview {
@@ -1223,7 +1198,7 @@ ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover  a.ite
     margin-bottom: 15px;
     border-bottom: 1px solid #e1e1e1;
 }
-.permalink h4 { margin-bottom: 0px }
+.permalink h4 { margin-bottom: 0px;font-weight:bold; }
 .permalink a {
     color: #656d78;
     font-family: "Roboto";
@@ -1244,7 +1219,7 @@ ul#portfolio-container.three-columns li .item-wrapp .portfolio-item:hover  a.ite
 }
 .blog-post.layout-2 .media-holder {
     float: left;
-    width: 200px;
+    width: 170px;
     margin-bottom: 5px;
     margin-right: 30px;
     position: relative;

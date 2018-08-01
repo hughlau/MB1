@@ -56,9 +56,9 @@ img:hover {
     background: #dc5034;
     color: #fff;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-     height: 70px;
+    font-size: 3.0rem;
+    line-height: 28px;
+     height: 58px;
     margin: 0;
     /* padding: 20px 20px 40px 20px; */
 	transition: all 0.4s ease-in-out;
@@ -76,7 +76,7 @@ img:hover {
      font-weight: bold;
     padding-right: 30px;
     padding-left: 30px;
-    line-height: 40px;
+    line-height: 28px;
 	font-size:1.8rem;
 	transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -98,7 +98,7 @@ img:hover {
      font-weight: bold;
     padding-right: 30px;
     padding-left: 40px;
-    line-height: 40px;
+    line-height: 28px;
 	font-size:1.8rem;
 	transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -136,7 +136,7 @@ img:hover {
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /* home section */
 #content {
-  padding-top: 100px;
+  padding-top: 73px;
   padding-bottom: 100px;
 }
 
