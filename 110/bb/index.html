@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+<title>育儿宝典</title>
+
+  <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+  <link type="text/css" rel="stylesheet" href="css/css.css" />
+  <style type="text/css">
+    * {box-sizing: border-box;}
+    div.search {padding: 1.5rem 0;margin:0;}
+    .searchinner {
+      position: relative;
+      width: 85%;
+      margin: 0 auto;
+    }
+    .d1 {background: #A3D0C3;}
+    .d1 input {
+      width: 100%;
+      height: 2.5rem;
+      padding-left: 10px;
+      border: 2px solid #7BA7AB;
+      border-radius: 5px;
+      outline: none;
+      background: #F9F0DA;
+      color: #9E9C9C;
+    }
+    .d1 button {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      width:  2.5rem;
+      height:  2.5rem;
+      border: none;
+      background: #7BA7AB;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .d1 button:before {
+      content: "\f002";
+      font-family: FontAwesome;
+      font-size: 16px;
+      color: #F9F0DA;
+    }
+  </style>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/config.js"></script>
+
+
+</head>
+<body>
+
+  <div class="search d1">
+    <div class="searchinner">
+      <input type="text" placeholder="查查看..." id="queryText">
+      <button onclick="window.router('menuAndTextlist',{rootColumnId:'402880e45d8cb684015d8cb8fb010000',query:encodeURIComponent($('#queryText').val())},true)"></button>
+    </div>
+  </div>
+
+<div class="box bingzhong bingzhong01">
+  <div class="bzleft"><span></span>
+    <P>新生儿</P>
+  </div>
+  <div class="bzright">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd06b550004',columnName:encodeURIComponent('最初几周') },true);" >最初几周</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd11e9f0005' ,columnName:encodeURIComponent('健康与安全') },true);" >健康与安全</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd1966b0007' ,columnName:encodeURIComponent('婴儿用品') },true);" >婴儿用品</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd20e3b0009' ,columnName:encodeURIComponent('婴儿睡眠') },true);" >婴儿睡眠</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd1e6750008' ,columnName:encodeURIComponent('护理与喂养') },true);" >护理与喂养</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd163ad0006' ,columnName:encodeURIComponent('妈妈用品') },true);" >妈妈用品</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="box bingzhong">
+  <div class="bzleft"><span></span>
+    <P>婴儿喂养</P>
+  </div>
+  <div class="bzright" id="app">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd3a4cf0010' ,columnName:encodeURIComponent('母乳喂养') },true);" >母乳喂养</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd3c8030011' ,columnName:encodeURIComponent('辅食喂养') },true);" >辅食喂养</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd3f2000012' ,columnName:encodeURIComponent('奶粉选用') },true);" >奶粉选用</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd428060013' ,columnName:encodeURIComponent('母乳保存') },true);" >母乳保存</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd450310014' ,columnName:encodeURIComponent('食品安全') },true);" >食品安全</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd4823e0015' ,columnName:encodeURIComponent('婴儿补钙') },true);" >婴儿补钙</a></li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="box bingzhong">
+  <div class="bzleft"><span></span>
+    <P>产后妈妈</P>
+  </div>
+  <div class="bzright">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd238e8000a' ,columnName:encodeURIComponent('乳房护理') },true);" >乳房护理</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd2678a000b' ,columnName:encodeURIComponent('新妈妈必读') },true);" >新妈妈必读</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd29c37000c' ,columnName:encodeURIComponent('坐月子') },true);" >坐月子</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd2cd09000d' ,columnName:encodeURIComponent('夫妻关系') },true);" >夫妻关系</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd359ef000e' ,columnName:encodeURIComponent('瘦身与减肥') },true);" >瘦身与减肥</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd37e26000f' ,columnName:encodeURIComponent('抑郁症') },true);" >抑郁症</a></li>
+    </ul>
+  </div>
+</div>
+<div class="box bingzhong">
+  <div class="bzleft"><span></span>
+    <P>护理</P>
+  </div>
+  <div class="bzright">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd71faf0022' ,columnName:encodeURIComponent('意外/急救') },true);" >意外/急救</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd74b660023' ,columnName:encodeURIComponent('哭闹/安抚') },true);" >哭闹/安抚</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd777d00024' ,columnName:encodeURIComponent('私处/如厕') },true);" >私处/如厕</a></li>
+
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd7a72c0025' ,columnName:encodeURIComponent('身体护理') },true);" >身体护理</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd7ca840026' ,columnName:encodeURIComponent('尿布疹处理') },true);" >尿布疹处理</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd7ebaa0027' ,columnName:encodeURIComponent('口腔护理') },true);" >口腔护理</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="box bingzhong">
+  <div class="bzleft"><span></span>
+    <P>发育</P>
+  </div>
+  <div class="bzright">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd88682002a' ,columnName:encodeURIComponent('身体和动作') },true);" >身体和动作</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd85af60029' ,columnName:encodeURIComponent('大脑发育') },true);" >大脑发育</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd91784002c' ,columnName:encodeURIComponent('情感发育') },true);" >情感发育</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd8e4b1002b' ,columnName:encodeURIComponent('发育里程') },true);" >发育里程</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd941f8002d' ,columnName:encodeURIComponent('发育迟缓') },true);" >发育迟缓</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd816820028' ,columnName:encodeURIComponent('早产儿发育') },true);" >早产儿发育</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="box bingzhong">
+  <div class="bzleft"><span></span>
+    <P>培养</P>
+  </div>
+  <div class="bzright">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd98c79002e' ,columnName:encodeURIComponent('孩子由谁带') },true);" >孩子由谁带</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd9b12d002f' ,columnName:encodeURIComponent('亲子阅读') },true);" >亲子阅读</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd9d64a0030' ,columnName:encodeURIComponent('宝宝出游') },true);" >宝宝出游</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd9fe910031' ,columnName:encodeURIComponent('电视和音乐') },true);" >电视和音乐</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dda24130032' ,columnName:encodeURIComponent('亲子游戏') },true);" >亲子游戏</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dda4b810033' ,columnName:encodeURIComponent('亲子关系') },true);" >亲子关系</a></li>
+    </ul>
+  </div>
+</div>
+<div class="box bingzhong">
+  <div class="bzleft"><span></span>
+    <P>常见病</P>
+  </div>
+  <div class="bzright" data-ui="menuList">
+    <ul>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd6d71f0021' ,columnName:encodeURIComponent('家中常备') },true);" >家中常备</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd4cd840016' ,columnName:encodeURIComponent('发烧/贫血') },true);" >发烧/贫血</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd4f8440017' ,columnName:encodeURIComponent('便秘/腹泻') },true);" >便秘/腹泻</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd536550018' ,columnName:encodeURIComponent('湿疹/急疹') },true);" >湿疹/急疹</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd55ea20019' ,columnName:encodeURIComponent('感冒/鼻塞') },true);" >感冒/鼻塞</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd585eb001a' ,columnName:encodeURIComponent('黄疸/肺炎') },true);" >黄疸/肺炎</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd5acdb001b' ,columnName:encodeURIComponent('疫苗/传染') },true);" >疫苗/传染</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd5d399001c' ,columnName:encodeURIComponent('内外科疾病') },true);" >内外科疾病</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd5f9ee001d' ,columnName:encodeURIComponent('耳鼻喉科') },true);" >耳鼻喉科</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd61d89001e' ,columnName:encodeURIComponent('神经科病') },true);" >神经科病</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd6725f001f' ,columnName:encodeURIComponent('溶血败血症') },true);" >溶血败血症</a></li>
+      <li><a href="javascript:;" onclick="window.router('menuAndTextlist',{ rootColumnId:'402880e45d8cb684015d8cb8fb010000',columnListId:'000000005d8ef06c015d9dd6a5be0020' ,columnName:encodeURIComponent('遗传疾病') },true);" >遗传疾病</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<!--<div class="footer">
+  <p>寸草春晖情</p>
+</div>-->
+</body>
+</html>

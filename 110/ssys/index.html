@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="generator"
+          content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="UTF-8" />
+    <title>瘦身养生</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, max-age=0" />
+    <meta name="apple-itunes-app" content="app-id=876336838,app-argument=iting://open" />
+    <link rel="stylesheet" href="css/common.css-v=20161209160341.css"/>
+    <link rel="stylesheet" href="css/wap.v4.css-v=20161209160341.css"/>
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="static/js/common.js"></script>
+    <script src="static/js/config.js"></script>
+
+    <script type="text/javascript">
+        window.rootColumnId = jc.param.get("rootColumnId") || 1;
+        window.columnListId = jc.param.get("columnListId");
+        window.columnName=jc.param.get("columnName");
+        window.queryText=jc.param.get("query")==undefined?"":jc.param.get("query");
+        var sdelay=0;
+        function returnTop() {
+            window.scrollBy(0,-250);//Only for y vertical-axis
+            if(document.body.scrollTop>0) {
+                sdelay= setTimeout('returnTop()',50);
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        jc.uiReady = function () {
+            var app = document.getElementById("hb");
+            var textList = jc.createDOM({
+                dataUi: "textList",
+                classname: "J_textList hasBorder",
+                dataId: columnListId,
+                dataPath: "cmsApiArticleList",
+                dataPageSize: 20,
+                dataQuery:queryText
+            });
+            app.appendChild(textList);
+            jc.uiUpdate();
+
+        };
+    </script>
+</head>
+<body class="">
+<div class="page p-list">
+
+
+    <div class="container">
+        <section class="list-album wrapper" id="hb">
+
+        </section>
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function loaddata(id){
+        var html =document.getElementById(id).innerText.trim();
+        if(""==html){
+            var app = document.getElementById(id);
+            var textList = jc.createDOM({
+                dataUi: "textList",
+                classname: "J_textList hasBorder",
+                dataId: columnListId,
+                dataPath: "cmsApiArticleList",
+                dataPageSize: 20,
+                dataQuery:queryText
+            });
+            app.appendChild(textList);
+            jc.uiUpdate();
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>

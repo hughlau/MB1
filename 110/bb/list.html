@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="static/js/common.js"></script>
+    <script src="static/js/config.js"></script>
+    <script type="text/javascript">
+        window.rootColumnId = jc.param.get("rootColumnId") || 1;
+        window.columnListId = jc.param.get("columnListId");
+        window.columnName=jc.param.get("columnName");
+        document.title =columnName.replace('%2F','/');
+        window.queryText=jc.param.get("query")==undefined?"":jc.param.get("query");
+        var sdelay=0;
+        function returnTop() {
+            window.scrollBy(0,-250);//Only for y vertical-axis
+            if(document.body.scrollTop>0) {
+                sdelay= setTimeout('returnTop()',50);
+            }
+        }
+        jc.uiReady = function () {
+            var app = document.getElementById("app");
+            var textList = jc.createDOM({
+                dataUi: "textList",
+                classname: "J_textList hasBorder",
+                dataId: columnListId,
+                dataPath: "cmsApiArticleList",
+                dataPageSize: 20,
+                dataQuery:queryText,
+                dataRoot:rootColumnId
+            });
+            app.appendChild(textList);
+
+            jc.uiUpdate();
+        };
+    </script>
+
+
+</head>
+<body class="index">
+    <div class="container mt30" style="min-height:600px;">
+        <div class="row">
+            <div id="app" class="col-md-9" style="padding-bottom: 2.5rem;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

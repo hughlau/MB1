@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>个人中心</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/newComm.css" />
+    <link rel="stylesheet" href="css/mycenter.css" />
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/style.css"> 
+  </head>
+  <body class="bg-f0 fc-333">
+    <div class="sf-uc-header center clearfix f12 relative">
+
+    <span class="prove">
+      <a href="javascript:void(0)javascript:history.back(-1);" class="back"></a>
+    </span> 
+    <span class="sf-uc-uhead relative">
+      <a href="javascript:void(0);" id="wapmysf_B01_01">
+      <b class="relative">
+        <img class="head" src="http://static.soufunimg.com/common_m/m_my/images/sf-uc-userHDefault.png" />
+      </b> 
+    </span>
+    <a href="javascript:void(0);" class="login">小明</a>
+   </div>
+
+    <section class="mgT10 sf-uc-menu1 clearfix">
+      <nav>
+        <ul>
+<!--           <li class="my-orlist">
+            <a href="javascript:void(0);">
+			  <span></span>
+              <h4>我的订单</h4>
+            </a>
+          </li>
+          <li class="orlist">
+            <a href="javascript:void(0);">
+			<span></span>
+              <h4>看房清单</h4>
+            </a>
+          </li>
+          <li class="rentali">
+            <a href="javascript:void(0);">
+			<span></span>
+              <h4>帮你找房</h4>
+            </a>
+          </li>
+          <li class="buy">
+            <a href="javascript:void(0);">
+			<span></span>
+              <h4>帮你卖房</h4>
+            </a>
+          </li>
+          <li class="rentalo">
+            <a href="javascript:void(0);">
+			<span></span>
+              <h4>帮你出租</h4>
+            </a>
+          </li>
+          <li class="reno">
+            <a href="javascript:void(0);">
+			<span></span>
+
+              <h4>帮你装修</h4>
+            </a>
+          </li>
+          <li class="contract">
+            <a href="javascript:void(0);">
+			<span></span>
+              <h4>我的合同</h4>
+            </a>
+          </li>
+          <li class="loan">
+            <a href="javascript:void(0);">
+			<span></span>
+              <h4>我的贷款</h4>
+            </a>
+          </li> -->
+          <li class="collect">
+			  <a class="cd-bouncy-nav-trigger" href="javascript:;" target="_self">
+			  <span></span>
+				  <h4>我的收藏</h4>
+			  </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    
+	<div class="cd-bouncy-nav-modal">
+		<nav>
+			<ul class="cd-bouncy-nav">
+				<li><a href="http://micbuy.cn/bb/">育儿百科</a></li>
+				<li><a href="http://micbuy.cn/fs">宝宝辅食</a></li>
+				<li><a href="http://micbuy.cn/ms">蒙氏教育</a></li>
+				<li><a href="http://micbuy.cn/hb">绘本品读</a></li>
+				<li><a href="http://micbuy.cn/ssys">产后瘦身</a></li>
+			</ul>
+		</nav>
+		<a href="#0" class="cd-close" target="_self">关闭菜单</a>
+	</div>
+    
+    <footer class="footer">
+      <img src="images/recommand.jpg" style="width:100%;"/>
+    </footer>
+
+  </body>
+  
+  <script src="http://hovertree.com/ziyuan/jquery/jquery-2.2.0.min.js"></script>
+	<script src="http://hovertree.com/texiao/html5/17/main.js"></script>
+	<script>
+
+	function loadStyleString(css){
+		var style = document.createElement("style");
+		style.type = "text/css";
+		try{
+			style.appendChild(document.createTextNode(css));
+		}catch(ex){
+			style.styleSheet.cssText = css;
+		}
+		var head = document.getElementsByTagName('head')[0];
+		head.appendChild(style);
+	}
+	var  css="";
+	css +=" .cd-bouncy-nav li:nth-of-type(1) a::before {content: '15篇';}";
+	css +=" .cd-bouncy-nav li:nth-of-type(2) a::before {content: '25篇';background-position: -80px 0;}";
+	css +=" .cd-bouncy-nav li:nth-of-type(3) a::before {content: '35篇';background-position: -160px 0;}";
+	css +=" .cd-bouncy-nav li:nth-of-type(4) a::before {content: '145篇';background-position: -240px 0;}";
+	css +=" .cd-bouncy-nav li:nth-of-type(5) a::before {content: '155篇';background-position: -320px 0;}";
+	loadStyleString(css);
+
+
+	</script>
+</html>

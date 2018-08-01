@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <title>绘本品读</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" type="text/css" href="static/css/audioplayer.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/js/common.js"></script>
+    <script src="static/js/config.js"></script>
+    <script src="static/js/weixinAudio.js"></script>
+    <script type="text/javascript">
+        window.rootColumnId = '28720b4c7f3711e7bb31be2e44b06b34';
+        window.columnListId = '000000005dae881c015dd595436e00d5';
+        window.queryText=jc.param.get("query")==undefined?"":jc.param.get("query");
+        jc.uiReady = function () {
+            if(queryText!=""){
+                document.title=queryText;
+                $("#queryText").val(queryText);
+            }
+            var app = document.getElementById("hb");
+            var textList = jc.createDOM({
+                dataUi: "textList",
+                classname: "J_textList hasBorder",
+                dataId: columnListId,
+                dataPath: "cmsApiArticleList",
+                dataPageSize: 20,
+                dataQuery:queryText,
+                dataRoot:rootColumnId
+            });
+            app.appendChild(textList);
+            jc.uiUpdate();
+        };
+    </script>
+</head>
+<body>
+
+
+<main class="cd-main" >
+    <div class="search d1">
+        <div class="searchinner">
+            <input type="text" placeholder="查查看..." id="queryText">
+            <button onclick="window.router('menuAndTextlist',{rootColumnId: window.rootColumnId,query:encodeURIComponent($('#queryText').val())},true)"></button>
+        </div>
+    </div>
+    <div id="hb" class="cd-gallery" style="margin-top: 5rem;">
+    </div>
+</main>
+
+
+</body>
+
+</html>
