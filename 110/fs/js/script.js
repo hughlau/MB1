@@ -1,5 +1,20 @@
+function toDetail(url){
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		url="http://"+window.location.host+url.replace('pc','pcm');
+	}else{
+		url="http://"+window.location.host+url;
+	}
+	window.location.href = url;
+}
+
 document.body.addEventListener('touchstart', function(){ });
 (function ($, window) {
+
+	if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		var url=window.location.href;
+		url=url.replace('pcm','pc');
+		window.location.href = url;
+	}
 
     var App = App ||
         {

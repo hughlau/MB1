@@ -16,7 +16,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
-  color: #C8C8C8;
   background-color: #242325;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -124,7 +123,7 @@ header h1 {
 .cd-bouncy-nav {
   position: absolute;
   left: 50%;
-  top: 50vh;
+  top: 40vh;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -203,6 +202,8 @@ header h1 {
   padding: 90px 20px 0;
   margin-bottom: 30px;
   color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .cd-bouncy-nav a::before {
   /* icons */
@@ -217,9 +218,9 @@ header h1 {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  height: 5.0rem;
-  width: 5.0rem;
-  line-height:5.0rem;
+  height: 7.0rem;
+  width: 7.0rem;
+  line-height:7.0rem;
   border-radius: 50%;
   background-color: #77BFA3;
   /* background-image: url("http://hovertree.com/texiao/html5/17/cd-category-icons.svg"); */

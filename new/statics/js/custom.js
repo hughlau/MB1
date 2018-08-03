@@ -1,4 +1,13 @@
 
+function toDetail(url){
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		url="http://"+window.location.host+url.replace('pc','pcm');
+	}else{
+		url="http://"+window.location.host+url;
+	}
+	window.location.href = url;
+}
+
 function GetUrlRelativePath()
 {
 	var url = document.location.toString();
@@ -13,6 +22,7 @@ function GetUrlRelativePath()
 	return relUrl;
 }
 jQuery(document).ready(function($){
+	
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 200) {
 			$('.go-top').fadeIn(200);
@@ -37,6 +47,12 @@ jQuery(document).ready(function($){
 });
 
 jQuery.noConflict()(function ($) {
+	
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		var url=window.location.href;
+		url=url.replace('pc','pcm');
+		window.location.href = url;
+	}
 $(document).ready(function ($) {
  /*----------------------------------------------------------*/
  /*              1 - CLIENTS IMAGE HOVER EFFECT                */
